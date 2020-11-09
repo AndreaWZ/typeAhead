@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/5876ad7321.js" crossorigin="anonymous"></script>
+    <title>Type Ahead</title>
+</head>
+<body>
+    <form>
+        <div id="contents">
+            <input autocomplete="off" id="input" type="text" placeholder="City or State" onkeyup="getValueEl(this.value)">
+            <ul id="ul">
+            </ul>
+        </div>
+        <div class="city">Filter For a City</div>
+        <div class="state">and Its Population Growth</div>
+    </form>
+
+    <div id="cityInfo"></div>
+
+</body>
+</html>
